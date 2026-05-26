@@ -1,0 +1,49 @@
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
+DATA_DIR = ROOT / "data" / "raw"
+NTHU_DIR = DATA_DIR / "nthu_ddd"
+TEST_VIDEOS_DIR = DATA_DIR / "test_videos"
+OUTPUTS_DIR = ROOT / "outputs"
+PLOTS_DIR = OUTPUTS_DIR / "plots"
+VIDEOS_DIR = OUTPUTS_DIR / "videos"
+METRICS_DIR = OUTPUTS_DIR / "metrics"
+CHECKPOINTS_DIR = OUTPUTS_DIR / "checkpoints"
+MODELS_DIR = ROOT / "data" / "models"
+FACE_MODEL_PATH = MODELS_DIR / "face_landmarker.task"
+CACHE_DIR = ROOT / "data" / "cache"
+EYE_CACHE_PATH = CACHE_DIR / "eye_crops.npz"
+
+SEED = 17
+
+EYE_SIZE = 24
+SEQ_LEN = 10
+SEQ_STEP = 5
+
+BATCH_SIZE_CNN = 128
+BATCH_SIZE_LSTM = 32
+NUM_EPOCHS_CNN = 15
+NUM_EPOCHS_LSTM = 15
+LR_CNN = 1e-3
+LR_LSTM = 1e-3
+EARLY_STOP_PATIENCE = 5
+GRAD_CLIP_NORM = 1.0
+
+EAR_THRESH = 0.21
+PERCLOS_WINDOW = 90
+PERCLOS_THRESH = 0.20
+
+CLASS_NAMES = ("alert", "drowsy")
+NUM_CLASSES = 2
+
+TARGET_F1_FRAME = 0.93
+TARGET_RECALL_WINDOW = 0.90
+TARGET_FPS = 15
+
+LEFT_EYE_LANDMARKS = (33, 160, 158, 133, 153, 144)
+RIGHT_EYE_LANDMARKS = (263, 387, 385, 362, 380, 373)
+
+MOUTH_LANDMARKS = (61, 39, 269, 291, 405, 17)
+MAR_THRESH = 0.5
+YAWN_WINDOW = 30
+YAWN_THRESH = 0.40

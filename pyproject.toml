@@ -1,0 +1,23 @@
+[project]
+name = "driver-fatigue"
+version = "0.1.0"
+description = "Driver fatigue detection by video — EAR/PERCLOS baseline vs SmallEyeCNN vs CNN+LSTM"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "albumentations>=2.0.8",
+    "ipykernel>=7.2.0",
+    "ipywidgets>=8.1.8",
+    "jupyter>=1.1.1",
+    "kagglehub",
+    "matplotlib>=3.10.9",
+    "mediapipe>=0.10.35",
+    "numpy>=2.4.6",
+    "opencv-python>=4.13.0.92",
+    "python-docx>=1.2.0",
+    "python-pptx>=1.0.2",
+    "scikit-learn>=1.8.0",
+    "torch>=2.12.0",
+    "torchvision>=0.27.0",
+    "tqdm>=4.67.3",
+]
